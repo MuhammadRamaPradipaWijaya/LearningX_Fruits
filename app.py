@@ -37,7 +37,7 @@ def addFruit():
         if image_name :
             real_file_name = image_name.filename
             image_file_name = real_file_name.split('/')[-1]
-            file_path = f'static/assets/imgfruit/{image_file_name}'
+            file_path = f'static/assets/imgFruit/{image_file_name}'
             image_name.save(file_path)
         else :
             image_name = None
@@ -71,7 +71,7 @@ def edit(_id):
         if image_name :
             real_file_name = image_name.filename
             image_file_name = real_file_name.split('/')[-1]
-            file_path = f'static/assets/imgfruit/{image_file_name}'
+            file_path = f'static/assets/imgFruit/{image_file_name}'
             image_name.save(file_path)
             doc['image'] = image_file_name
 
